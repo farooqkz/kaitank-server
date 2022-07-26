@@ -1,0 +1,31 @@
+types:
+  Direction:
+    - UP
+    - DOWN
+    - LEFT
+    - RIGHT
+  Location:
+    x: float
+    y: float
+  Player:
+    id: UserId
+    location: Location
+    lookingDirection: Direction
+  GameState:
+    players: Player[]
+
+
+methods:
+  joinGame:
+  moveTo:
+    location: Location
+
+auth:
+  anonymous: {}
+
+
+userState: GameState
+
+error: string
+
+tick: 25 
