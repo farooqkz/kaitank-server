@@ -10,15 +10,25 @@ types:
   Player:
     id: UserId
     location: Location
+    hp: int
+    ammo: int
     lookingDirection: Direction
+  Bullet:
+    location: Location
+    direction: Direction
   GameState:
     players: Player[]
+    bullets: Bullet[]
 
 
 methods:
   joinGame:
   moveTo:
     location: Location
+  changeDir:
+    dir: Direction
+  shoot:
+
 
 auth:
   anonymous: {}
